@@ -1,11 +1,13 @@
 /* Custom styles. Original form-submit handler removed (RSVP form no longer present). */
 
 /* Remove Arabic calligraphy lines / Islamic elements */
+[data-elem-id="1782312134224"],
+[data-elem-id="1782312310182000001"],
 [data-elem-id="1780144694093"],
 [data-elem-id="1780166531595"],
-img[src*="623915249_2629494717_1.png"],
-img[src*="623915249_2629494717_4.png"],
-img[data-original*="623915249_2629494717_1.png"],
-img[data-original*="623915249_2629494717_4.png"] {
+img[src*="noroot_8.png"],
+img[data-original*="noroot_8.png"],
+img[src*="ChatGPT_Image_May_25.png"],
+img[data-original*="ChatGPT_Image_May_25.png"] {
   display: none !important;
 }
