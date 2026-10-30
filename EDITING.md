@@ -1,0 +1,57 @@
+# Customer Editing Guide — Manu & Ekta (#EkMann)
+
+This template is customized for the **25th Wedding Anniversary (Silver Jubilee)** celebration of **Manu Gupta & Ekta Gupta** at **Buena Vista Luxury Garden Spa Resort**.
+
+It features an interactive wax-seal envelope overlay, opening animation video, ambient video backdrop, personalized background soundtrack, countdown timer, complete 3-day multi-event programme (tabbed itinerary), venue navigation, and event etiquette.
+
+---
+
+## Configuration & Content
+
+All customer edits are configured in:
+→ [editable/wedding-data.js](file:///c:/invitestory/week9/ekta-manu/editable/wedding-data.js)
+
+### Couple & Occasion Information
+Edit `couple` in `editable/wedding-data.js`:
+- `groom`: `"Manu Gupta"`
+- `bride`: `"Ekta Gupta"`
+- `groomFirst` & `brideFirst`: `"Manu"`, `"Ekta"`
+- `occasion`: `"25th Wedding Anniversary"`
+- `hashtag`: `"#EkMann"`
+- `subtitle`: `"Celebrating 25 Years of Togetherness • Silver Jubilee"`
+
+### Anniversary Dates & Note
+Edit `wedding` in `editable/wedding-data.js`:
+- `dateLabel`: `"29th NOV - 1st DEC"`
+- `dateISO`: `"2026-11-29T12:00:00+05:30"` (drives countdown timer & Google Calendar)
+- `invitationNote`: Main anniversary message text
+
+### Multi-Day Programme (Itinerary)
+Edit `itinerary` array in `editable/wedding-data.js`:
+- **29 November 2026** (Arrivals, sundowner, mehfil & after-hours):
+  - 12:00 NOON: The Silver Arrival (Guest check-in)
+  - 1:30 PM ONWARDS: Act I / The Opening Toast (Welcome lunch)
+  - 3:30 – 6:30 PM: Act II / The Grand Unwrapping (Candlelit sundowner – Amphitheater)
+  - 8:30 – 11:30 PM: Act III / Nazrana (Mehfil night – Zen Garden)
+  - 12:30 AM ONWARDS: Past Our Bedtime (Afterparty – Concord, early 30 November)
+- **30 November 2026** (From coffee to the grand celebration):
+  - 7:30 – 10:30 AM: Coffee & Cover Stories (Breakfast – Aurora)
+  - 12:30 PM ONWARDS: The Poolside Prelude (Lunch – Poolside)
+  - 2:30 – 6:30 PM: Baraat 2.0 (Poolside to Machan & Main Lawn)
+  - During the Afternoon: Rangrez – Raag, Rang & Rajasthan (Folk music & festive food – Rangrez Lawn)
+  - 8:30 PM ONWARDS: The Silver Ball – The Leopard Edit (Serenade Garden / Music, cake & afterparty)
+- **1 December 2026** (Farewell Morning & The Curtain Call):
+  - 7:30 – 10:30 AM: The Farewell Brew (Breakfast – Aurora)
+  - By 12:00 NOON: Checkout ("Checked out. Still #EkMann.")
+
+### Venue & Location
+Edit `venue` in `editable/wedding-data.js`:
+- `name`: `"Buena Vista Luxury Garden Spa Resort"`
+- `address`: `"Jaipur, Rajasthan"`
+- `mapsUrl`: `"https://maps.app.goo.gl/bsTEjSybxpoKaKLw9?g_st=ic"`
+
+### Media & Audio
+- `audio`: `./editable/assets/background-music.mp3` (custom extracted soundtrack)
+- `heroVideo`: `./editable/assets/Swans2.mov`
+- `sealVideo`: `./editable/assets/1782224012851.mp4`
+- `overlayImage`: `./editable/assets/ChatGPT Image Jun 23, 2026, 04_40_29 PM.png`
