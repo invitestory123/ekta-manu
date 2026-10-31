@@ -11,7 +11,7 @@ window.WEDDING_DATA = {
     brideFirst: "Ekta",
     occasion: "25th Wedding Anniversary",
     hashtag: "#EkMan",
-    subtitle: "Celebrating 25 Years of Togetherness • Silver Jubilee",
+    subtitle: "Celebrating 25 Years of Togetherness<br />Silver Jubilee",
   },
 
   wedding: {
@@ -260,7 +260,7 @@ window.WEDDING_DATA = {
           description: "Thank you for making our Silver Jubilee an occasion worth remembering.",
           date: "Tuesday, 1 December 2026",
           time: "By 12:00 noon",
-          venue: "Buena Vista Luxury Resort",
+          venue: "Buena Vista Luxury Resorts & Garden Spa",
           signature: "MANU & EKTA",
           cardImage: "images/events/p25_event_checkout.png"
         }
@@ -269,8 +269,8 @@ window.WEDDING_DATA = {
   ],
 
   venue: {
-    name: "Buena Vista Luxury Garden Spa Resort",
-    address: "Jaipur, Rajasthan",
+    name: "Buena Vista Luxury Resorts & Garden Spa",
+    address: "Jaipur",
     mapsUrl: "https://maps.app.goo.gl/bsTEjSybxpoKaKLw9?g_st=ic",
   },
 

@@ -1,6 +1,6 @@
 # Customer Editing Guide — Manu & Ekta (#EkMann)
 
-This template is customized for the **25th Wedding Anniversary (Silver Jubilee)** celebration of **Manu Gupta & Ekta Gupta** at **Buena Vista Luxury Garden Spa Resort**.
+This template is customized for the **25th Wedding Anniversary (Silver Jubilee)** celebration of **Manu Gupta & Ekta Gupta** at **Buena Vista Luxury Resorts & Garden Spa**.
 
 It features an interactive wax-seal envelope overlay, opening animation video, ambient video backdrop, personalized background soundtrack, countdown timer, complete 3-day multi-event programme (tabbed itinerary), venue navigation, and event etiquette.
 
@@ -46,8 +46,8 @@ Edit `itinerary` array in `editable/wedding-data.js`:
 
 ### Venue & Location
 Edit `venue` in `editable/wedding-data.js`:
-- `name`: `"Buena Vista Luxury Garden Spa Resort"`
-- `address`: `"Jaipur, Rajasthan"`
+- `name`: `"Buena Vista Luxury Resorts & Garden Spa"`
+- `address`: `"Jaipur"`
 - `mapsUrl`: `"https://maps.app.goo.gl/bsTEjSybxpoKaKLw9?g_st=ic"`
 
 ### Media & Audio
