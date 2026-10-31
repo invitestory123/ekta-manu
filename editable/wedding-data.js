@@ -15,17 +15,12 @@ window.WEDDING_DATA = {
   },
 
   wedding: {
-    dateLabel: "29th NOV - 1st DEC",
-    dateISO: "2026-11-29T12:00:00+05:30",
+    dateLabel: "30th NOV - 1st DEC",
+    dateISO: "2026-11-30T07:30:00+05:30",
     invitationNote: "Dear Friends and Family,<br />Join us for a celebration of love, laughter, and 25 years of beautiful togetherness as we celebrate our Silver Jubilee!",
   },
 
   schedule: [
-    { title: "The Silver Arrival", time: "12:00 NOON" },
-    { title: "Act I / The Opening Toast", time: "1:30 PM" },
-    { title: "Act II / The Grand Unwrapping", time: "3:30 PM" },
-    { title: "Act III / Nazrana (Mehfil)", time: "8:30 PM" },
-    { title: "Past Our Bedtime", time: "12:30 AM" },
     { title: "Coffee & Cover Stories", time: "7:30 AM" },
     { title: "The Poolside Prelude", time: "12:30 PM" },
     { title: "Baraat 2.0", time: "2:30 PM" },
@@ -38,108 +33,6 @@ window.WEDDING_DATA = {
   itinerary: [
     {
       dayId: "day1",
-      dayTitle: "29 November",
-      dayDate: "Sunday, 29 November 2026",
-      tagline: "Arrivals, sundowner, mehfil & after-hours",
-      dateShort: "29 Nov",
-      overviewCard: "images/events/p06_day1_overview.png",
-      footerNote: "The afterparty begins just after midnight on 30 November.",
-      events: [
-        {
-          id: "silver-arrival",
-          number: "12:00",
-          act: "29 NOVEMBER / ARRIVAL",
-          title: "The Silver Arrival",
-          subtitle: "Guest check-in",
-          quote: "Check in. Unpack. Let the good times in.",
-          description: "Your room awaits, and so does a weekend worth celebrating.",
-          date: "Sunday, 29 November 2026",
-          time: "12:00 noon onwards",
-          venue: "Resort reception / Check-in",
-          cardImage: "images/events/p07_event_silver_arrival.png"
-        },
-        {
-          id: "opening-toast",
-          number: "01",
-          act: "ACT I / 29 NOVEMBER",
-          title: "The Opening Toast",
-          subtitle: "Welcome lunch",
-          quote: "The first course of a very good story.",
-          description: "A welcome lunch, long conversations and the first cheerful reunion of the celebrations.",
-          date: "Sunday, 29 November 2026",
-          time: "1:30 PM onwards",
-          venue: "Welcome Lunch",
-          cardImage: "images/events/p08_event_opening_toast.png"
-        },
-        {
-          id: "grand-unwrapping",
-          act: "ACT II / 29 NOVEMBER",
-          title: "The Grand Unwrapping",
-          subtitle: "A Candlelit Sundowner",
-          tagline: "Modern music. Golden hour. A thousand little flames.",
-          date: "Sunday, 29 November 2026",
-          time: "3:30 - 6:30 PM",
-          venue: "Amphitheater / Hi-tea & Music",
-          venueArt: "images/events/art/venue_grand_unwrapping.png",
-          cardImage: "images/events/p09_event_grand_unwrapping.png",
-          dressCode: {
-            title: "The Modern Muse",
-            subtitle: "Effortless contemporary elegance",
-            time: "29 NOVEMBER | 3:30 - 6:30 PM",
-            description: "Modern dresses, refined co-ords, smart tailoring and soft evening hues.",
-            caricature: "images/events/art/caricature_modern_muse.png",
-            cardImage: "images/events/p10_dresscode_modern_muse.png",
-            colors: ["#d3c3b4", "#b2a496", "#e9e1d4", "#9a8773"]
-          }
-        },
-        {
-          id: "nazrana",
-          act: "ACT III / 29 NOVEMBER",
-          title: "Nazrana",
-          subtitle: "Darbaar After Dark",
-          tagline: "An evening of mehfil, melody & mehmaan-nawaazi.",
-          date: "Sunday, 29 November 2026",
-          time: "8:30 - 11:30 PM",
-          venue: "Zen Garden",
-          venueArt: "images/events/art/venue_nazrana.png",
-          cardImage: "images/events/p11_event_nazrana.png",
-          dressCode: {
-            title: "Adaa & Andaaz",
-            subtitle: "Old-world charm, present-day silhouettes",
-            time: "29 NOVEMBER | 8:30 - 11:30 PM",
-            description: "Indo-Western: sculpted drapes, velvet bandhgalas, fusion couture.",
-            caricature: "images/events/art/caricature_adaa_andaaz.png",
-            cardImage: "images/events/p12_dresscode_adaa_andaaz.png",
-            colors: ["#4b1828", "#332525", "#aa7d5f", "#cdac89"]
-          }
-        },
-        {
-          id: "past-bedtime",
-          number: "12:30",
-          act: "AFTER HOURS / EARLY 30 NOVEMBER",
-          title: "Past Our Bedtime",
-          subtitle: "Afterparty - Concord (early 30 November)",
-          quote: "The only plan is not to have one.",
-          description: "After the mehfil: bigger beats, a little mischief and a dance floor with no curfew.",
-          date: "Monday, 30 November 2026",
-          time: "12:30 AM onwards",
-          venue: "CONCORD / Afterparty",
-          isDarkTheme: true,
-          cardImage: "images/events/p13_event_past_bedtime.png",
-          dressCode: {
-            title: "Midnight Mischief",
-            subtitle: "The night has no dress rehearsal",
-            time: "30 NOVEMBER | 12:30 AM ONWARDS",
-            description: "Metallics, cocktailwear, statement jackets and dance-floor glamour.",
-            caricature: "images/events/art/caricature_midnight_mischief.png",
-            cardImage: "images/events/p14_dresscode_midnight_mischief.png",
-            colors: ["#181a1f", "#57525b", "#b69e83", "#a0a4ae"]
-          }
-        }
-      ]
-    },
-    {
-      dayId: "day2",
       dayTitle: "30 November",
       dayDate: "Monday, 30 November 2026",
       tagline: "From coffee to the grand celebration",
@@ -230,7 +123,7 @@ window.WEDDING_DATA = {
       ]
     },
     {
-      dayId: "day3",
+      dayId: "day2",
       dayTitle: "1 December",
       dayDate: "Tuesday, 1 December 2026",
       tagline: "Farewell Morning & The Curtain Call",
