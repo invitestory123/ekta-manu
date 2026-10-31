@@ -48,4 +48,4 @@ Edit `venue` in `editable/wedding-data.js`:
 - `audio`: `./editable/assets/background-music.mp3` (custom extracted soundtrack)
 - `heroVideo`: `./editable/assets/Swans2.mov`
 - `sealVideo`: `./editable/assets/1782224012851.mp4`
-- `overlayImage`: `./editable/assets/ChatGPT Image Jun 23, 2026, 04_40_29 PM.png`
+- `overlayImage`: `./editable/assets/envelope.jpg`
