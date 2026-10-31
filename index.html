@@ -304,31 +304,34 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
 </div> </div> <div class='t396__elem tn-elem tn-elem__24874460931771277026942000001' data-elem-id='1771277026942000001' data-elem-type='text' data-field-top-value="28" data-field-left-value="320" data-field-height-value="64" data-field-width-value="560" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-textfit-value="autoheight" data-field-fontsize-value="41" data-field-top-res-320-value="29" data-field-left-res-320-value="-120" data-field-top-res-480-value="27" data-field-left-res-480-value="-40" data-field-top-res-640-value="28" data-field-left-res-640-value="40" data-field-top-res-960-value="27" data-field-left-res-960-value="200"> <div class='tn-atom'field='tn_text_1771277026942000001'>The Celebration Begins In</div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t396_init',function() {t396_init('2487446093');});});</script> <!-- /T396 --> </div> 
 
 
+
 <div id="rec2487446103" class="r t-rec" style="background-color:#f9f0e0; padding: 60px 16px; min-height: auto;" data-animationappear="off" data-record-type="396" data-bg-color="#f9f0e0">
   <style>
 /* ============================================================
-   EKMAN LUXURY CARDS & CARICATURES SHOWCASE
+   EKMAN LUXURY EVENTS & CARICATURES SHOWCASE
    ============================================================ */
 #ekmanSchedule {
-  max-width: 960px;
+  max-width: 880px;
   margin: 0 auto;
-  font-family: 'Cinzel', Georgia, serif;
+  font-family: 'Ovo', Georgia, serif;
   color: #554033;
-  padding: 10px 16px 50px;
+  padding: 10px 12px 40px;
 }
 
 .ekman-header {
   text-align: center;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 .ekman-pretitle {
+  font-family: 'Cinzel', serif;
   font-size: 13px;
-  letter-spacing: 0.32em;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #a67d2b;
   margin-bottom: 10px;
 }
 .ekman-main-title {
+  font-family: 'Cinzel', serif;
   font-size: 40px;
   font-weight: 500;
   color: #a67d2b;
@@ -336,7 +339,6 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
   letter-spacing: 0.05em;
 }
 .ekman-subtitle {
-  font-family: 'Ovo', Georgia, serif;
   font-size: 18px;
   font-style: italic;
   color: #846f61;
@@ -348,7 +350,7 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
   justify-content: center;
   gap: 14px;
   margin: 0 auto 30px;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 .ekman-ornament-line {
   width: 80px;
@@ -374,7 +376,7 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
   padding: 11px 24px;
   border-radius: 30px;
   border: 1px solid rgba(180, 140, 61, 0.45);
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.7);
   font-family: 'Cinzel', serif;
   font-size: 13px;
   letter-spacing: 0.12em;
@@ -403,132 +405,561 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
 .ekman-day-pane {
   display: flex;
   flex-direction: column;
-  gap: 48px;
-  margin-bottom: 60px;
+  gap: 36px;
+  margin-bottom: 50px;
 }
 
 /* ------------------------------------------------------------
-   PAGE OF ALL EVENTS (PROGRAMME OVERVIEW)
+   OVERVIEW CARD: "The Page of All Events"
    ------------------------------------------------------------ */
-.ekman-overview-block {
-  text-align: center;
+.ekman-card-stationery {
   position: relative;
+  background: #fdfaf4;
+  border: 1px solid #e2d1b8;
+  border-radius: 8px;
+  padding: 34px 30px;
+  box-shadow: 0 10px 30px rgba(120, 95, 70, 0.09), 0 1px 3px rgba(0,0,0,0.03);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.ekman-overview-label {
-  display: inline-block;
+.ekman-card-stationery::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(180, 140, 61, 0.28);
+  border-radius: 5px;
+  pointer-events: none;
+}
+.ekman-card-stationery:hover {
+  box-shadow: 0 14px 40px rgba(120, 95, 70, 0.14);
+}
+
+/* Card Header & Footer flourishes */
+.ekman-card-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #887262;
+  margin-bottom: 20px;
+  padding: 0 4px;
+}
+.ekman-card-bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #9c8776;
+  margin-top: 26px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(180, 140, 61, 0.2);
+}
+
+.ekman-overview-title-block {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.ekman-overview-pre {
+  font-family: 'Cinzel', serif;
   font-size: 12px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: #a67d2b;
-  margin-bottom: 14px;
-  font-weight: 600;
-  background: rgba(180, 140, 61, 0.12);
-  padding: 6px 18px;
-  border-radius: 20px;
-  border: 1px solid rgba(180, 140, 61, 0.25);
+  margin-bottom: 6px;
 }
-.ekman-card-single {
-  max-width: 440px;
+.ekman-overview-date {
+  font-family: 'Cinzel', serif;
+  font-size: 44px;
+  color: #2b1f16;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  margin: 4px 0 8px;
+}
+.ekman-overview-tagline {
+  font-size: 18px;
+  font-style: italic;
+  color: #8c7159;
+}
+
+/* Overview Timeline List */
+.ekman-overview-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  max-width: 660px;
   margin: 0 auto;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 12px 36px rgba(100, 75, 50, 0.16), 0 2px 6px rgba(0,0,0,0.06);
-  border: 1px solid rgba(180, 140, 61, 0.3);
-  background: #fff;
-  transition: transform 0.35s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.35s ease;
+  padding: 10px 0 10px 10px;
+}
+.ekman-overview-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  bottom: 22px;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(180, 140, 61, 0.2), #b48c3d 25%, #b48c3d 75%, rgba(180, 140, 61, 0.2));
+}
+.ekman-timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
   cursor: pointer;
 }
-.ekman-card-single:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 48px rgba(100, 75, 50, 0.22);
+.ekman-timeline-item:hover {
+  background: rgba(180, 140, 61, 0.08);
+  transform: translateX(4px);
 }
-.ekman-card-img {
-  width: 100%;
-  height: auto;
-  display: block;
+.ekman-timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #a67d2b;
+  border: 2px solid #fdfaf4;
+  box-shadow: 0 0 0 1px #a67d2b;
+  flex-shrink: 0;
+  margin-top: 4px;
+  z-index: 2;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.ekman-timeline-item:hover .ekman-timeline-dot {
+  transform: scale(1.3);
+  background: #5a0f1b;
+  box-shadow: 0 0 0 1px #5a0f1b;
+}
+.ekman-timeline-content {
+  flex: 1;
+}
+.ekman-timeline-time {
+  font-family: 'Cinzel', serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #a67d2b;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.ekman-timeline-title {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e2017;
+  letter-spacing: 0.02em;
+  margin-bottom: 2px;
+}
+.ekman-timeline-sub {
+  font-size: 14.5px;
+  color: #735e50;
+  font-style: italic;
+}
+.ekman-overview-foot-quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  color: #8c7159;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px dashed rgba(180, 140, 61, 0.35);
 }
 
 /* ------------------------------------------------------------
-   EVENT SECTION (INDIVIDUAL EVENT + CARICATURE)
+   INDIVIDUAL EVENT SECTION CARDS
    ------------------------------------------------------------ */
-.ekman-event-section {
-  text-align: center;
+.ekman-event-card {
   position: relative;
-  padding-top: 20px;
-  border-top: 1px solid rgba(180, 140, 61, 0.2);
+  background: #fdfaf4;
+  border: 1px solid #e2d1b8;
+  border-radius: 8px;
+  padding: 34px 28px;
+  box-shadow: 0 10px 30px rgba(120, 95, 70, 0.08);
+  overflow: hidden;
+  scroll-margin-top: 40px;
 }
-.ekman-event-badge {
-  display: inline-block;
-  font-size: 11.5px;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: #8c6820;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-.ekman-event-heading {
-  font-size: 28px;
-  font-weight: 600;
-  color: #3b2718;
-  letter-spacing: 0.04em;
-  margin: 0 0 6px 0;
-}
-.ekman-event-subtext {
-  font-family: 'Ovo', Georgia, serif;
-  font-size: 16px;
-  font-style: italic;
-  color: #7a6353;
-  margin-bottom: 22px;
+.ekman-event-card::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(180, 140, 61, 0.25);
+  border-radius: 5px;
+  pointer-events: none;
 }
 
-/* Two Cards Grid: Event Card + Caricature Dress Code Card */
-.ekman-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 26px;
-  max-width: 900px;
-  margin: 0 auto;
-  justify-items: center;
+/* Dark Theme for Past Our Bedtime */
+.ekman-event-card.is-dark {
+  background: linear-gradient(145deg, #1f1b19 0%, #151211 100%);
+  border-color: #4a3c30;
+  color: #e5ded5;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
 }
-.ekman-grid-item {
-  width: 100%;
-  max-width: 430px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 12px 36px rgba(100, 75, 50, 0.16), 0 2px 6px rgba(0,0,0,0.06);
-  border: 1px solid rgba(180, 140, 61, 0.3);
-  background: #fff;
-  transition: transform 0.35s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.35s ease;
-  cursor: pointer;
+.ekman-event-card.is-dark::before {
+  border-color: rgba(180, 140, 61, 0.35);
+}
+.ekman-event-card.is-dark .ekman-card-top-bar,
+.ekman-event-card.is-dark .ekman-card-bottom-bar {
+  color: #bfa88b;
+  border-top-color: rgba(180, 140, 61, 0.3);
+}
+.ekman-event-card.is-dark .ekman-act-badge {
+  color: #d8ba72;
+}
+.ekman-event-card.is-dark .ekman-giant-num {
+  color: #c9ab6f;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+.ekman-event-card.is-dark .ekman-ev-title {
+  color: #ffffff;
+}
+.ekman-event-card.is-dark .ekman-ev-subtitle {
+  color: #d8ba72;
+}
+.ekman-event-card.is-dark .ekman-ev-desc {
+  color: #c4b8aa;
+}
+.ekman-event-card.is-dark .ekman-meta-grid {
+  border-top-color: rgba(180, 140, 61, 0.3);
+}
+.ekman-event-card.is-dark .ekman-meta-label {
+  color: #d8ba72;
+}
+.ekman-event-card.is-dark .ekman-meta-val {
+  color: #ffffff;
+}
+.ekman-event-card.is-dark .ekman-meta-val strong {
+  color: #f7ede1;
+}
+
+/* Card Elements */
+.ekman-act-badge {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #a67d2b;
+  margin-bottom: 12px;
+}
+
+.ekman-giant-num {
+  text-align: center;
+  font-family: 'Cinzel', 'Ovo', serif;
+  font-size: 68px;
+  line-height: 1;
+  font-weight: 400;
+  color: #a67d2b;
+  letter-spacing: 0.05em;
+  margin: 10px 0 16px;
+  opacity: 0.88;
+}
+
+.ekman-ev-head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ekman-ev-title {
+  font-family: 'Cinzel', serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: #2b1d14;
+  letter-spacing: 0.03em;
+  margin: 0 0 6px 0;
+  line-height: 1.15;
+}
+.ekman-ev-subtitle {
+  font-size: 19px;
+  font-style: italic;
+  color: #8c7159;
+  margin-bottom: 12px;
+}
+.ekman-ev-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5f4a3c;
+  max-width: 620px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+/* Artwork Showcase (Venue Art / Couple Photos) */
+.ekman-art-frame {
   position: relative;
+  margin: 20px auto 26px;
+  max-width: 520px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(180, 140, 61, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  background: #f0eae1;
 }
-.ekman-grid-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 48px rgba(100, 75, 50, 0.22);
+.ekman-art-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
-.ekman-card-tag {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  background: rgba(43, 31, 22, 0.85);
-  backdrop-filter: blur(4px);
+.ekman-art-frame:hover .ekman-art-img {
+  transform: scale(1.02);
+}
+
+/* Dress Code / Caricature Showcase Box */
+.ekman-dresscode-box {
+  margin: 26px auto 28px;
+  max-width: 540px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(180, 140, 61, 0.35);
+  border-radius: 8px;
+  padding: 24px 20px;
+  box-shadow: 0 6px 20px rgba(166, 125, 43, 0.08);
+  position: relative;
+  text-align: center;
+}
+.ekman-event-card.is-dark .ekman-dresscode-box {
+  background: rgba(35, 30, 27, 0.85);
+  border-color: rgba(180, 140, 61, 0.35);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ekman-dresscode-pill {
+  display: inline-block;
+  background: #3b2718;
   color: #f9f0e0;
   font-family: 'Cinzel', serif;
-  font-size: 10px;
-  letter-spacing: 0.22em;
+  font-size: 11px;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  padding: 4px 10px;
+  padding: 5px 14px;
   border-radius: 3px;
-  z-index: 2;
-  border: 1px solid rgba(180, 140, 61, 0.4);
+  margin-bottom: 14px;
+}
+.ekman-event-card.is-dark .ekman-dresscode-pill {
+  background: #4a3a2c;
+  color: #d8ba72;
 }
 
-/* Lightbox Modal */
+/* Caricature Image in Dress Code */
+.ekman-caricature-wrap {
+  position: relative;
+  max-width: 440px;
+  margin: 0 auto 16px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(180, 140, 61, 0.3);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  background: #eee8dc;
+}
+.ekman-caricature-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.ekman-caricature-wrap:hover .ekman-caricature-img {
+  transform: scale(1.02);
+}
+
+.ekman-dresscode-title {
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #3b2718;
+  margin: 4px 0;
+}
+.ekman-event-card.is-dark .ekman-dresscode-title {
+  color: #ffffff;
+}
+.ekman-dresscode-sub {
+  font-size: 16px;
+  font-style: italic;
+  color: #8c7159;
+  margin-bottom: 10px;
+}
+.ekman-event-card.is-dark .ekman-dresscode-sub {
+  color: #d8ba72;
+}
+.ekman-dresscode-timing {
+  font-family: 'Cinzel', serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #2b1f16;
+  margin-bottom: 8px;
+}
+.ekman-event-card.is-dark .ekman-dresscode-timing {
+  color: #f7ede1;
+}
+.ekman-dresscode-desc {
+  font-size: 14.5px;
+  color: #5c4738;
+  max-width: 460px;
+  margin: 0 auto 14px;
+  line-height: 1.5;
+}
+.ekman-event-card.is-dark .ekman-dresscode-desc {
+  color: #c4b8aa;
+}
+
+/* Color Swatch Circles */
+.ekman-palette-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+.ekman-color-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+.ekman-color-dot:hover {
+  transform: scale(1.2);
+}
+.ekman-dresscode-hashtag {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: #9c8776;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+/* Meta Grid (Date / Time / Venue) */
+.ekman-meta-grid {
+  border-top: 1px solid rgba(180, 140, 61, 0.25);
+  padding-top: 18px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  row-gap: 8px;
+  column-gap: 16px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.ekman-meta-label {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #a67d2b;
+  font-weight: 600;
+}
+.ekman-meta-val {
+  font-family: 'Cinzel', 'Ovo', serif;
+  font-size: 15px;
+  color: #3b2718;
+  font-weight: 500;
+}
+.ekman-meta-val strong {
+  font-weight: 700;
+  color: #24160c;
+}
+
+/* Action Buttons (Original Card & Maps) */
+.ekman-card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+.ekman-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-family: 'Cinzel', serif;
+  font-size: 11.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgba(180, 140, 61, 0.4);
+  background: rgba(255, 255, 255, 0.65);
+  color: #6a5140;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.ekman-action-btn:hover {
+  background: #ffffff;
+  color: #a67d2b;
+  border-color: #a67d2b;
+  transform: translateY(-1px);
+}
+.ekman-event-card.is-dark .ekman-action-btn {
+  background: rgba(50, 42, 36, 0.7);
+  color: #d8ba72;
+  border-color: rgba(180, 140, 61, 0.4);
+}
+.ekman-event-card.is-dark .ekman-action-btn:hover {
+  background: #3b2f25;
+  color: #ffffff;
+  border-color: #d8ba72;
+}
+
+/* Checkout Signature Card */
+.ekman-checkout-lead {
+  font-family: 'Cinzel', serif;
+  font-size: 38px;
+  color: #2e1d13;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.ekman-checkout-hashtag {
+  font-family: 'Cinzel', serif;
+  font-size: 32px;
+  color: #a67d2b;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.ekman-checkout-quote {
+  font-style: italic;
+  font-size: 18px;
+  color: #6a5140;
+  max-width: 520px;
+  margin: 0 auto 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+.ekman-checkout-sign {
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  letter-spacing: 0.25em;
+  color: #5a0f1b;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 14px;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------
+   LIGHTBOX MODAL FOR FULL INVITATION CARDS
+   ------------------------------------------------------------ */
 #ekmanLightbox {
   position: fixed;
   inset: 0;
-  background: rgba(15, 12, 10, 0.92);
-  backdrop-filter: blur(10px);
+  background: rgba(15, 12, 10, 0.88);
+  backdrop-filter: blur(8px);
   z-index: 999999;
   display: none;
   align-items: center;
@@ -541,9 +972,9 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
 }
 .ekman-lb-inner {
   position: relative;
-  max-width: 500px;
+  max-width: 480px;
   width: 100%;
-  max-height: 94vh;
+  max-height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -552,49 +983,56 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
 .ekman-lb-img {
   width: 100%;
   height: auto;
-  max-height: 88vh;
+  max-height: 85vh;
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 15px 50px rgba(0,0,0,0.7);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
 }
 .ekman-lb-close {
   position: absolute;
-  top: -16px;
-  right: -16px;
-  width: 38px;
-  height: 38px;
+  top: -15px;
+  right: -15px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: #ffffff;
   color: #3b2718;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
   border: 1px solid #c9b082;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: all 0.2s ease;
-  z-index: 10;
 }
 .ekman-lb-close:hover {
   background: #5a0f1b;
   color: #ffffff;
 }
-.ekman-lb-hint {
+.ekman-lb-caption {
   margin-top: 10px;
+  color: #e5ded5;
   font-family: 'Cinzel', serif;
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-align: center;
 }
 
-/* Responsive */
+/* Responsive tweaks */
 @media (max-width: 680px) {
-  .ekman-main-title { font-size: 28px; }
-  .ekman-event-heading { font-size: 22px; }
-  .ekman-cards-grid { grid-template-columns: 1fr; }
+  .ekman-main-title { font-size: 30px; }
+  .ekman-card-stationery { padding: 24px 14px; }
+  .ekman-event-card { padding: 24px 14px; }
+  .ekman-overview-date { font-size: 34px; }
+  .ekman-ev-title { font-size: 26px; }
+  .ekman-giant-num { font-size: 54px; }
+  .ekman-timeline-title { font-size: 17px; }
   .ekman-tab-btn { font-size: 12px; padding: 9px 15px; }
+  .ekman-dresscode-box { padding: 18px 12px; }
+  .ekman-dresscode-title { font-size: 22px; }
+  .ekman-checkout-lead { font-size: 30px; }
+  .ekman-checkout-hashtag { font-size: 26px; }
 }
 </style>
 
@@ -624,87 +1062,368 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
          ======================================================== -->
     <div class="ekman-day-pane" id="pane-day1">
 
-      <!-- 1. FIRST: THE PAGE OF ALL EVENTS (29 November Programme Overview) -->
-      <div class="ekman-overview-block">
-        <div class="ekman-overview-label">Programme Overview • 29 November</div>
-        <div class="ekman-card-single" onclick="ekmanOpenLightbox('images/events/p06_day1_overview.png')">
-          <img class="ekman-card-img" src="images/events/p06_day1_overview.png" alt="29 November - Programme Overview (All Events)" loading="lazy" />
+      <!-- PAGE OF ALL EVENTS: 29 November Programme Overview -->
+      <div class="ekman-card-stationery" id="overview-day1">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
+
+        <div class="ekman-overview-title-block">
+          <div class="ekman-overview-pre">THE #EKMAN AFFAIR / YOUR PROGRAMME</div>
+          <h3 class="ekman-overview-date">29 November</h3>
+          <div class="ekman-overview-tagline">Arrivals, sundowner, mehfil &amp; after-hours</div>
+          <div class="ekman-ornament" style="margin: 16px auto 0;">
+            <div class="ekman-ornament-line"></div>
+            <div class="ekman-ornament-dot"></div>
+            <div class="ekman-ornament-line"></div>
+          </div>
+        </div>
+
+        <div class="ekman-overview-timeline">
+          <a class="ekman-timeline-item" href="#ev-silver-arrival">
+            <div class="ekman-timeline-dot"></div>
+            <div class="ekman-timeline-content">
+              <div class="ekman-timeline-time">12:00 NOON</div>
+              <div class="ekman-timeline-title">The Silver Arrival</div>
+              <div class="ekman-timeline-sub">Guest check-in</div>
+            </div>
+          </a>
+
+          <a class="ekman-timeline-item" href="#ev-opening-toast">
+            <div class="ekman-timeline-dot"></div>
+            <div class="ekman-timeline-content">
+              <div class="ekman-timeline-time">1:30 PM ONWARDS</div>
+              <div class="ekman-timeline-title">Act I / The Opening Toast</div>
+              <div class="ekman-timeline-sub">Welcome lunch</div>
+            </div>
+          </a>
+
+          <a class="ekman-timeline-item" href="#ev-grand-unwrapping">
+            <div class="ekman-timeline-dot"></div>
+            <div class="ekman-timeline-content">
+              <div class="ekman-timeline-time">3:30 - 6:30 PM</div>
+              <div class="ekman-timeline-title">Act II / The Grand Unwrapping</div>
+              <div class="ekman-timeline-sub">Candlelit sundowner - Amphitheater</div>
+            </div>
+          </a>
+
+          <a class="ekman-timeline-item" href="#ev-nazrana">
+            <div class="ekman-timeline-dot"></div>
+            <div class="ekman-timeline-content">
+              <div class="ekman-timeline-time">8:30 - 11:30 PM</div>
+              <div class="ekman-timeline-title">Act III / Nazrana</div>
+              <div class="ekman-timeline-sub">Mehfil night - Zen Garden</div>
+            </div>
+          </a>
+
+          <a class="ekman-timeline-item" href="#ev-past-bedtime">
+            <div class="ekman-timeline-dot"></div>
+            <div class="ekman-timeline-content">
+              <div class="ekman-timeline-time">12:30 AM ONWARDS</div>
+              <div class="ekman-timeline-title">Past Our Bedtime</div>
+              <div class="ekman-timeline-sub">Afterparty - Concord (early 30 November)</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="ekman-overview-foot-quote">The afterparty begins just after midnight on 30 November.</div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p06_day1_overview.png', '29 November • Programme Overview')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Programme Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>06 / 25</span>
         </div>
       </div>
 
-      <!-- 2. THEN A SECTION FOR EACH EVENT -->
+      <!-- EVENT 1: The Silver Arrival -->
+      <div class="ekman-event-card" id="ev-silver-arrival">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
 
-      <!-- Event 1: The Silver Arrival -->
-      <div class="ekman-event-section">
-        <div class="ekman-event-badge">29 NOVEMBER • 12:00 NOON</div>
-        <h3 class="ekman-event-heading">The Silver Arrival</h3>
-        <div class="ekman-event-subtext">&ldquo;Check in. Unpack. Let the good times in.&rdquo;</div>
-        <div class="ekman-card-single" onclick="ekmanOpenLightbox('images/events/p07_event_silver_arrival.png')">
-          <img class="ekman-card-img" src="images/events/p07_event_silver_arrival.png" alt="The Silver Arrival - Guest Check-in" loading="lazy" />
+        <div class="ekman-act-badge">29 NOVEMBER / ARRIVAL</div>
+        <div class="ekman-giant-num">12:00</div>
+
+        <div class="ekman-ev-head">
+          <h3 class="ekman-ev-title">The Silver Arrival</h3>
+          <div class="ekman-ev-subtitle">&ldquo;Check in. Unpack. Let the good times in.&rdquo;</div>
+          <div class="ekman-ev-desc">Your room awaits, and so does a weekend worth celebrating.</div>
+        </div>
+
+        <div class="ekman-meta-grid">
+          <div class="ekman-meta-label">DATE</div>
+          <div class="ekman-meta-val">Sunday, 29 November 2026</div>
+          <div class="ekman-meta-label">TIME</div>
+          <div class="ekman-meta-val"><strong>12:00 noon onwards</strong></div>
+          <div class="ekman-meta-label">VENUE</div>
+          <div class="ekman-meta-val">Resort reception / Check-in</div>
+        </div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p07_event_silver_arrival.png', 'The Silver Arrival • Check-in')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Original Card
+          </button>
+          <a class="ekman-action-btn" href="https://maps.app.goo.gl/bsTEjSybxpoKaKLw9?g_st=ic" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Location
+          </a>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>07 / 25</span>
         </div>
       </div>
 
-      <!-- Event 2: Act I / The Opening Toast -->
-      <div class="ekman-event-section">
-        <div class="ekman-event-badge">ACT I • 1:30 PM ONWARDS</div>
-        <h3 class="ekman-event-heading">The Opening Toast</h3>
-        <div class="ekman-event-subtext">&ldquo;The first course of a very good story.&rdquo;</div>
-        <div class="ekman-card-single" onclick="ekmanOpenLightbox('images/events/p08_event_opening_toast.png')">
-          <img class="ekman-card-img" src="images/events/p08_event_opening_toast.png" alt="Act I / The Opening Toast - Welcome Lunch" loading="lazy" />
+      <!-- EVENT 2: Act I / The Opening Toast -->
+      <div class="ekman-event-card" id="ev-opening-toast">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
+
+        <div class="ekman-act-badge">ACT I / 29 NOVEMBER</div>
+        <div class="ekman-giant-num">01</div>
+
+        <div class="ekman-ev-head">
+          <h3 class="ekman-ev-title">The Opening Toast</h3>
+          <div class="ekman-ev-subtitle">&ldquo;The first course of a very good story.&rdquo;</div>
+          <div class="ekman-ev-desc">A welcome lunch, long conversations and the first cheerful reunion of the celebrations.</div>
+        </div>
+
+        <div class="ekman-meta-grid">
+          <div class="ekman-meta-label">DATE</div>
+          <div class="ekman-meta-val">Sunday, 29 November 2026</div>
+          <div class="ekman-meta-label">TIME</div>
+          <div class="ekman-meta-val"><strong>1:30 PM onwards</strong></div>
+          <div class="ekman-meta-label">VENUE</div>
+          <div class="ekman-meta-val">Welcome Lunch</div>
+        </div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p08_event_opening_toast.png', 'Act I • The Opening Toast')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Original Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>08 / 25</span>
         </div>
       </div>
 
-      <!-- Event 3: Act II / The Grand Unwrapping + Caricature & Dress Code -->
-      <div class="ekman-event-section">
-        <div class="ekman-event-badge">ACT II • 3:30 - 6:30 PM</div>
-        <h3 class="ekman-event-heading">The Grand Unwrapping</h3>
-        <div class="ekman-event-subtext">&ldquo;Modern music. Golden hour. A thousand little flames.&rdquo;</div>
-        <div class="ekman-cards-grid">
-          <div class="ekman-grid-item" onclick="ekmanOpenLightbox('images/events/p09_event_grand_unwrapping.png')">
-            <span class="ekman-card-tag">Event Programme</span>
-            <img class="ekman-card-img" src="images/events/p09_event_grand_unwrapping.png" alt="Act II - The Grand Unwrapping" loading="lazy" />
+      <!-- EVENT 3: Act II / The Grand Unwrapping (with Amphitheater Art & Modern Muse Caricature) -->
+      <div class="ekman-event-card" id="ev-grand-unwrapping">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
+
+        <!-- Venue Artwork -->
+        <div class="ekman-art-frame">
+          <img class="ekman-art-img" src="images/events/art/venue_grand_unwrapping.png" alt="Candlelit Sundowner at Amphitheater" loading="lazy" />
+        </div>
+
+        <div class="ekman-act-badge">ACT II / 29 NOVEMBER</div>
+
+        <div class="ekman-ev-head">
+          <h3 class="ekman-ev-title">The Grand Unwrapping</h3>
+          <div class="ekman-ev-subtitle">A Candlelit Sundowner</div>
+          <div class="ekman-ev-desc">Modern music. Golden hour. A thousand little flames.</div>
+        </div>
+
+        <!-- Caricature & Dress Code Showcase -->
+        <div class="ekman-dresscode-box">
+          <div class="ekman-dresscode-pill">THE DRESS CODE</div>
+
+          <div class="ekman-caricature-wrap">
+            <img class="ekman-caricature-img" src="images/events/art/caricature_modern_muse.png" alt="Couple Caricature - The Modern Muse" loading="lazy" />
           </div>
-          <div class="ekman-grid-item" onclick="ekmanOpenLightbox('images/events/p10_dresscode_modern_muse.png')">
-            <span class="ekman-card-tag">Caricature &amp; Dress Code</span>
-            <img class="ekman-card-img" src="images/events/p10_dresscode_modern_muse.png" alt="Couple Caricature - The Modern Muse Dress Code" loading="lazy" />
+
+          <div class="ekman-overview-pre" style="font-size:11px;">THE GRAND UNWRAPPING / SUNDOWNER</div>
+          <h4 class="ekman-dresscode-title">The Modern Muse</h4>
+          <div class="ekman-dresscode-sub">Effortless contemporary elegance</div>
+          <div class="ekman-dresscode-timing">29 NOVEMBER | 3:30 - 6:30 PM</div>
+          <div class="ekman-dresscode-desc">Modern dresses, refined co-ords, smart tailoring and soft evening hues.</div>
+
+          <div class="ekman-palette-row">
+            <span class="ekman-color-dot" style="background-color: #d3c3b4;" title="Nude Cream"></span>
+            <span class="ekman-color-dot" style="background-color: #b2a496;" title="Warm Taupe"></span>
+            <span class="ekman-color-dot" style="background-color: #e9e1d4;" title="Champagne"></span>
+            <span class="ekman-color-dot" style="background-color: #9a8773;" title="Soft Cocoa"></span>
           </div>
+          <div class="ekman-dresscode-hashtag">#EkMan</div>
+        </div>
+
+        <div class="ekman-meta-grid">
+          <div class="ekman-meta-label">DATE</div>
+          <div class="ekman-meta-val">Sunday, 29 November 2026</div>
+          <div class="ekman-meta-label">TIME</div>
+          <div class="ekman-meta-val"><strong>3:30 - 6:30 PM</strong></div>
+          <div class="ekman-meta-label">VENUE</div>
+          <div class="ekman-meta-val">Amphitheater / Hi-tea &amp; Music</div>
+        </div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p09_event_grand_unwrapping.png', 'Act II • The Grand Unwrapping')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Event Card
+          </button>
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p10_dresscode_modern_muse.png', 'Dress Code • The Modern Muse')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Dress Code Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>09 &amp; 10 / 25</span>
         </div>
       </div>
 
-      <!-- Event 4: Act III / Nazrana + Caricature & Dress Code -->
-      <div class="ekman-event-section">
-        <div class="ekman-event-badge">ACT III • 8:30 - 11:30 PM</div>
-        <h3 class="ekman-event-heading">Nazrana — Darbaar After Dark</h3>
-        <div class="ekman-event-subtext">&ldquo;An evening of mehfil, melody &amp; mehmaan-nawaazi.&rdquo;</div>
-        <div class="ekman-cards-grid">
-          <div class="ekman-grid-item" onclick="ekmanOpenLightbox('images/events/p11_event_nazrana.png')">
-            <span class="ekman-card-tag">Event Programme</span>
-            <img class="ekman-card-img" src="images/events/p11_event_nazrana.png" alt="Act III - Nazrana" loading="lazy" />
+      <!-- EVENT 4: Act III / Nazrana (with Zen Garden Art & Adaa & Andaaz Caricature) -->
+      <div class="ekman-event-card" id="ev-nazrana">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
+
+        <!-- Venue Artwork -->
+        <div class="ekman-art-frame">
+          <img class="ekman-art-img" src="images/events/art/venue_nazrana.png" alt="Nazrana Mehfil at Zen Garden" loading="lazy" />
+        </div>
+
+        <div class="ekman-act-badge">ACT III / 29 NOVEMBER</div>
+
+        <div class="ekman-ev-head">
+          <h3 class="ekman-ev-title">Nazrana</h3>
+          <div class="ekman-ev-subtitle">Darbaar After Dark</div>
+          <div class="ekman-ev-desc">An evening of mehfil, melody &amp; mehmaan-nawaazi.</div>
+        </div>
+
+        <!-- Caricature & Dress Code Showcase -->
+        <div class="ekman-dresscode-box">
+          <div class="ekman-dresscode-pill">THE DRESS CODE</div>
+
+          <div class="ekman-caricature-wrap">
+            <img class="ekman-caricature-img" src="images/events/art/caricature_adaa_andaaz.png" alt="Couple Caricature - Adaa & Andaaz" loading="lazy" />
           </div>
-          <div class="ekman-grid-item" onclick="ekmanOpenLightbox('images/events/p12_dresscode_adaa_andaaz.png')">
-            <span class="ekman-card-tag">Caricature &amp; Dress Code</span>
-            <img class="ekman-card-img" src="images/events/p12_dresscode_adaa_andaaz.png" alt="Couple Caricature - Adaa & Andaaz Dress Code" loading="lazy" />
+
+          <div class="ekman-overview-pre" style="font-size:11px;">NAZRANA / DARBAAR AFTER DARK</div>
+          <h4 class="ekman-dresscode-title">Adaa &amp; Andaaz</h4>
+          <div class="ekman-dresscode-sub">Old-world charm, present-day silhouettes</div>
+          <div class="ekman-dresscode-timing">29 NOVEMBER | 8:30 - 11:30 PM</div>
+          <div class="ekman-dresscode-desc">Indo-Western: sculpted drapes, velvet bandhgalas, fusion couture.</div>
+
+          <div class="ekman-palette-row">
+            <span class="ekman-color-dot" style="background-color: #4b1828;" title="Oxblood Wine"></span>
+            <span class="ekman-color-dot" style="background-color: #332525;" title="Deep Espresso"></span>
+            <span class="ekman-color-dot" style="background-color: #aa7d5f;" title="Bronze Rust"></span>
+            <span class="ekman-color-dot" style="background-color: #cdac89;" title="Antique Gold"></span>
           </div>
+          <div class="ekman-dresscode-hashtag">#EkMan</div>
+        </div>
+
+        <div class="ekman-meta-grid">
+          <div class="ekman-meta-label">DATE</div>
+          <div class="ekman-meta-val">Sunday, 29 November 2026</div>
+          <div class="ekman-meta-label">TIME</div>
+          <div class="ekman-meta-val"><strong>8:30 - 11:30 PM</strong></div>
+          <div class="ekman-meta-label">VENUE</div>
+          <div class="ekman-meta-val">Zen Garden</div>
+        </div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p11_event_nazrana.png', 'Act III • Nazrana')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Event Card
+          </button>
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p12_dresscode_adaa_andaaz.png', 'Dress Code • Adaa & Andaaz')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Dress Code Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>11 &amp; 12 / 25</span>
         </div>
       </div>
 
-      <!-- Event 5: Past Our Bedtime + Caricature & Dress Code -->
-      <div class="ekman-event-section">
-        <div class="ekman-event-badge">AFTER HOURS • 12:30 AM ONWARDS</div>
-        <h3 class="ekman-event-heading">Past Our Bedtime</h3>
-        <div class="ekman-event-subtext">&ldquo;The only plan is not to have one.&rdquo;</div>
-        <div class="ekman-cards-grid">
-          <div class="ekman-grid-item" onclick="ekmanOpenLightbox('images/events/p13_event_past_bedtime.png')">
-            <span class="ekman-card-tag">Event Programme</span>
-            <img class="ekman-card-img" src="images/events/p13_event_past_bedtime.png" alt="Past Our Bedtime - Afterparty" loading="lazy" />
+      <!-- EVENT 5: Past Our Bedtime (Dark Luxe Theme with Midnight Mischief Caricature) -->
+      <div class="ekman-event-card is-dark" id="ev-past-bedtime">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
+
+        <div class="ekman-act-badge">AFTER HOURS / EARLY 30 NOVEMBER</div>
+        <div class="ekman-giant-num">12:30</div>
+
+        <div class="ekman-ev-head">
+          <h3 class="ekman-ev-title">Past Our Bedtime</h3>
+          <div class="ekman-ev-subtitle">&ldquo;The only plan is not to have one.&rdquo;</div>
+          <div class="ekman-ev-desc">After the mehfil: bigger beats, a little mischief and a dance floor with no curfew.</div>
+        </div>
+
+        <!-- Caricature & Dress Code Showcase -->
+        <div class="ekman-dresscode-box">
+          <div class="ekman-dresscode-pill">THE DRESS CODE</div>
+
+          <div class="ekman-caricature-wrap">
+            <img class="ekman-caricature-img" src="images/events/art/caricature_midnight_mischief.png" alt="Couple Caricature - Midnight Mischief" loading="lazy" />
           </div>
-          <div class="ekman-grid-item" onclick="ekmanOpenLightbox('images/events/p14_dresscode_midnight_mischief.png')">
-            <span class="ekman-card-tag">Caricature &amp; Dress Code</span>
-            <img class="ekman-card-img" src="images/events/p14_dresscode_midnight_mischief.png" alt="Couple Caricature - Midnight Mischief Dress Code" loading="lazy" />
+
+          <div class="ekman-overview-pre" style="font-size:11px; color:#d8ba72;">PAST OUR BEDTIME / AFTERPARTY</div>
+          <h4 class="ekman-dresscode-title">Midnight Mischief</h4>
+          <div class="ekman-dresscode-sub">The night has no dress rehearsal</div>
+          <div class="ekman-dresscode-timing">30 NOVEMBER | 12:30 AM ONWARDS</div>
+          <div class="ekman-dresscode-desc">Metallics, cocktailwear, statement jackets and dance-floor glamour.</div>
+
+          <div class="ekman-palette-row">
+            <span class="ekman-color-dot" style="background-color: #181a1f;" title="Midnight Black"></span>
+            <span class="ekman-color-dot" style="background-color: #57525b;" title="Charcoal"></span>
+            <span class="ekman-color-dot" style="background-color: #b69e83;" title="Metallic Champagne"></span>
+            <span class="ekman-color-dot" style="background-color: #a0a4ae;" title="Silver Pewter"></span>
           </div>
+          <div class="ekman-dresscode-hashtag" style="color:#d8ba72;">#EkMan</div>
+        </div>
+
+        <div class="ekman-meta-grid">
+          <div class="ekman-meta-label">DATE</div>
+          <div class="ekman-meta-val">Monday, 30 November 2026</div>
+          <div class="ekman-meta-label">TIME</div>
+          <div class="ekman-meta-val"><strong>12:30 AM onwards</strong></div>
+          <div class="ekman-meta-label">VENUE</div>
+          <div class="ekman-meta-val">CONCORD / Afterparty</div>
+        </div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p13_event_past_bedtime.png', 'Past Our Bedtime • Afterparty')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Event Card
+          </button>
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p14_dresscode_midnight_mischief.png', 'Dress Code • Midnight Mischief')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Dress Code Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>13 &amp; 14 / 25</span>
         </div>
       </div>
-
     </div>
 
 
@@ -713,80 +1432,341 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
          ======================================================== -->
     <div class="ekman-day-pane" id="pane-day2">
 
-      <!-- 1. FIRST: THE PAGE OF ALL EVENTS (30 November Programme Overview) -->
-      <div class="ekman-overview-block">
-        <div class="ekman-overview-label">Programme Overview • 30 November</div>
-        <div class="ekman-card-single" onclick="ekmanOpenLightbox('images/events/p15_day2_overview.png')">
-          <img class="ekman-card-img" src="images/events/p15_day2_overview.png" alt="30 November - Programme Overview (All Events)" loading="lazy" />
+      <!-- PAGE OF ALL EVENTS: 30 November Programme Overview -->
+      <div class="ekman-card-stationery" id="overview-day2">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
         </div>
-      </div>
 
-      <!-- 2. THEN A SECTION FOR EACH EVENT -->
-
-      <!-- Event 6: Coffee & Cover Stories -->
-      <div class="ekman-event-section">
-        <div class="ekman-event-badge">THE MORNING AFTER • 7:30 - 10:30 AM</div>
-        <h3 class="ekman-event-heading">Coffee &amp; Cover Stories</h3>
-        <div class="ekman-event-subtext">&ldquo;Good mornings. Better stories from last night.&rdquo;</div>
-        <div class="ekman-card-single" onclick="ekmanOpenLightbox('images/events/p16_event_coffee_cover_stories.png')">
-          <img class="ekman-card-img" src="images/events/p16_event_coffee_cover_stories.png" alt="Coffee & Cover Stories - Breakfast" loading="lazy" />
-        </div>
-      </div>
-
-      <!-- Event 7: The Poolside Prelude -->
-      <div class="ekman-event-section">
-        <div class="ekman-event-badge">THE MIDDAY INTERLUDE • 12:30 PM ONWARDS</div>
-        <h3 class="ekman-event-heading">The Poolside Prelude</h3>
-        <div class="ekman-event-subtext">&ldquo;A relaxed lunch before the celebrations find their feet.&rdquo;</div>
-        <div class="ekman-card-single" onclick="ekmanOpenLightbox('images/events/p17_event_poolside_prelude.png')">
-          <img class="ekman-card-img" src="images/events/p17_event_poolside_prelude.png" alt="The Poolside Prelude - Lunch" loading="lazy" />
-        </div>
-      </div>
-
-      <!-- Event 8: Baraat 2.0 + Caricature & Dress Code -->
-      <div class="ekman-event-section">
-        <div class="ekman-event-badge">THE JOINT PROCESSION • 2:30 - 6:30 PM</div>
-        <h3 class="ekman-event-heading">Baraat 2.0</h3>
-        <div class="ekman-event-subtext">&ldquo;Two Leads. One Procession. This time we dance in together.&rdquo;</div>
-        <div class="ekman-cards-grid">
-          <div class="ekman-grid-item" onclick="ekmanOpenLightbox('images/events/p18_event_baraat.png')">
-            <span class="ekman-card-tag">Event Programme</span>
-            <img class="ekman-card-img" src="images/events/p18_event_baraat.png" alt="Baraat 2.0 - Procession" loading="lazy" />
-          </div>
-          <div class="ekman-grid-item" onclick="ekmanOpenLightbox('images/events/p19_dresscode_bright_side_baraat.png')">
-            <span class="ekman-card-tag">Caricature &amp; Dress Code</span>
-            <img class="ekman-card-img" src="images/events/p19_dresscode_bright_side_baraat.png" alt="Couple Caricature - The Bright Side of Baraat Dress Code" loading="lazy" />
+        <div class="ekman-overview-title-block">
+          <div class="ekman-overview-pre">THE #EKMAN AFFAIR / YOUR PROGRAMME</div>
+          <h3 class="ekman-overview-date">30 November</h3>
+          <div class="ekman-overview-tagline">From coffee to the grand celebration</div>
+          <div class="ekman-ornament" style="margin: 16px auto 0;">
+            <div class="ekman-ornament-line"></div>
+            <div class="ekman-ornament-dot"></div>
+            <div class="ekman-ornament-line"></div>
           </div>
         </div>
-      </div>
 
-      <!-- Event 9: Rangrez Lawn -->
-      <div class="ekman-event-section">
-        <div class="ekman-event-badge">THE RAJASTHANI CELEBRATION • AFTERNOON</div>
-        <h3 class="ekman-event-heading">Rangrez Lawn</h3>
-        <div class="ekman-event-subtext">&ldquo;Raag, Rang &amp; Rajasthan — Folk music and a Rajasthani feast.&rdquo;</div>
-        <div class="ekman-card-single" onclick="ekmanOpenLightbox('images/events/p20_event_rangrez.png')">
-          <img class="ekman-card-img" src="images/events/p20_event_rangrez.png" alt="Rangrez Lawn - Rajasthani Celebration" loading="lazy" />
+        <div class="ekman-overview-timeline">
+          <a class="ekman-timeline-item" href="#ev-coffee-cover-stories">
+            <div class="ekman-timeline-dot"></div>
+            <div class="ekman-timeline-content">
+              <div class="ekman-timeline-time">7:30 - 10:30 AM</div>
+              <div class="ekman-timeline-title">Coffee &amp; Cover Stories</div>
+              <div class="ekman-timeline-sub">Breakfast - Aurora</div>
+            </div>
+          </a>
+
+          <a class="ekman-timeline-item" href="#ev-poolside-prelude">
+            <div class="ekman-timeline-dot"></div>
+            <div class="ekman-timeline-content">
+              <div class="ekman-timeline-time">12:30 PM ONWARDS</div>
+              <div class="ekman-timeline-title">The Poolside Prelude</div>
+              <div class="ekman-timeline-sub">Lunch - Poolside</div>
+            </div>
+          </a>
+
+          <a class="ekman-timeline-item" href="#ev-baraat">
+            <div class="ekman-timeline-dot"></div>
+            <div class="ekman-timeline-content">
+              <div class="ekman-timeline-time">2:30 - 6:30 PM</div>
+              <div class="ekman-timeline-title">Baraat 2.0</div>
+              <div class="ekman-timeline-sub">Poolside to Machan &amp; Main Lawn</div>
+            </div>
+          </a>
+
+          <a class="ekman-timeline-item" href="#ev-rangrez">
+            <div class="ekman-timeline-dot"></div>
+            <div class="ekman-timeline-content">
+              <div class="ekman-timeline-time">DURING THE AFTERNOON</div>
+              <div class="ekman-timeline-title">Rangrez - Raag, Rang &amp; Rajasthan</div>
+              <div class="ekman-timeline-sub">Folk music &amp; festive food - Rangrez Lawn</div>
+            </div>
+          </a>
+
+          <a class="ekman-timeline-item" href="#ev-silver-ball">
+            <div class="ekman-timeline-dot"></div>
+            <div class="ekman-timeline-content">
+              <div class="ekman-timeline-time">8:30 PM ONWARDS</div>
+              <div class="ekman-timeline-title">The Silver Ball - The Leopard Edit</div>
+              <div class="ekman-timeline-sub">Serenade Garden / Music, cake &amp; afterparty</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="ekman-overview-foot-quote">The main event flows directly into the late-night party.</div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p15_day2_overview.png', '30 November • Programme Overview')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Programme Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>15 / 25</span>
         </div>
       </div>
 
-      <!-- Event 10: The Silver Ball + Caricature & Dress Code -->
-      <div class="ekman-event-section">
-        <div class="ekman-event-badge">THE GRAND ANNIVERSARY • 8:30 PM ONWARDS</div>
-        <h3 class="ekman-event-heading">The Silver Ball — The Leopard Edit</h3>
-        <div class="ekman-event-subtext">&ldquo;Heritage glamour. A little dramatic instinct.&rdquo;</div>
-        <div class="ekman-cards-grid">
-          <div class="ekman-grid-item" onclick="ekmanOpenLightbox('images/events/p21_event_silver_ball.png')">
-            <span class="ekman-card-tag">Event Programme</span>
-            <img class="ekman-card-img" src="images/events/p21_event_silver_ball.png" alt="The Silver Ball - Main Celebration" loading="lazy" />
-          </div>
-          <div class="ekman-grid-item" onclick="ekmanOpenLightbox('images/events/p22_dresscode_heritage_after_dark.png')">
-            <span class="ekman-card-tag">Caricature &amp; Dress Code</span>
-            <img class="ekman-card-img" src="images/events/p22_dresscode_heritage_after_dark.png" alt="Couple Caricature - Heritage After Dark Dress Code" loading="lazy" />
-          </div>
+      <!-- EVENT 6: Coffee & Cover Stories -->
+      <div class="ekman-event-card" id="ev-coffee-cover-stories">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
+
+        <div class="ekman-act-badge">30 NOVEMBER / THE MORNING AFTER</div>
+        <div class="ekman-giant-num">07:30</div>
+
+        <div class="ekman-ev-head">
+          <h3 class="ekman-ev-title">Coffee &amp; Cover Stories</h3>
+          <div class="ekman-ev-subtitle">&ldquo;Good mornings. Better stories from last night.&rdquo;</div>
+          <div class="ekman-ev-desc">Recharge, compare notes and casually pretend we slept early.</div>
+        </div>
+
+        <div class="ekman-meta-grid">
+          <div class="ekman-meta-label">DATE</div>
+          <div class="ekman-meta-val">Monday, 30 November 2026</div>
+          <div class="ekman-meta-label">TIME</div>
+          <div class="ekman-meta-val"><strong>7:30 - 10:30 AM</strong></div>
+          <div class="ekman-meta-label">VENUE</div>
+          <div class="ekman-meta-val">AURORA / Breakfast</div>
+        </div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p16_event_coffee_cover_stories.png', 'Coffee & Cover Stories')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Original Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>16 / 25</span>
         </div>
       </div>
 
+      <!-- EVENT 7: The Poolside Prelude -->
+      <div class="ekman-event-card" id="ev-poolside-prelude">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
+
+        <div class="ekman-act-badge">30 NOVEMBER / THE MIDDAY INTERLUDE</div>
+        <div class="ekman-giant-num">12:30</div>
+
+        <div class="ekman-ev-head">
+          <h3 class="ekman-ev-title">The Poolside Prelude</h3>
+          <div class="ekman-ev-subtitle">&ldquo;A relaxed lunch before the celebrations find their feet.&rdquo;</div>
+          <div class="ekman-ev-desc">Sunshine, familiar faces and a little anticipation before the baraat.</div>
+        </div>
+
+        <div class="ekman-meta-grid">
+          <div class="ekman-meta-label">DATE</div>
+          <div class="ekman-meta-val">Monday, 30 November 2026</div>
+          <div class="ekman-meta-label">TIME</div>
+          <div class="ekman-meta-val"><strong>12:30 PM onwards</strong></div>
+          <div class="ekman-meta-label">VENUE</div>
+          <div class="ekman-meta-val">POOL SIDE / Lunch</div>
+        </div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p17_event_poolside_prelude.png', 'The Poolside Prelude')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Original Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>17 / 25</span>
+        </div>
+      </div>
+
+      <!-- EVENT 8: Baraat 2.0 (with Dancing Art & Bright Side of Baraat Caricature) -->
+      <div class="ekman-event-card" id="ev-baraat">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
+
+        <!-- Dancing Couple Artwork -->
+        <div class="ekman-art-frame">
+          <img class="ekman-art-img" src="images/events/art/photo_baraat_dancing.png" alt="Couple dancing in Baraat 2.0" loading="lazy" />
+        </div>
+
+        <div class="ekman-act-badge">30 NOVEMBER / THE JOINT PROCESSION</div>
+
+        <div class="ekman-ev-head">
+          <h3 class="ekman-ev-title">Baraat 2.0</h3>
+          <div class="ekman-ev-subtitle">Two Leads. One Procession.</div>
+          <div class="ekman-ev-desc">Twenty-five years later, this time we dance in together.</div>
+        </div>
+
+        <!-- Caricature & Dress Code Showcase -->
+        <div class="ekman-dresscode-box">
+          <div class="ekman-dresscode-pill">THE DRESS CODE</div>
+
+          <div class="ekman-caricature-wrap">
+            <img class="ekman-caricature-img" src="images/events/art/caricature_bright_side_baraat.png" alt="Couple Caricature - The Bright Side of Baraat" loading="lazy" />
+          </div>
+
+          <div class="ekman-overview-pre" style="font-size:11px;">BARAAT 2.0 / RAJASTHANI AFTERNOON</div>
+          <h4 class="ekman-dresscode-title">The Bright Side of Baraat</h4>
+          <div class="ekman-dresscode-sub">Light. Bright. Ready to dance.</div>
+          <div class="ekman-dresscode-timing">30 NOVEMBER | 2:30 - 6:30 PM</div>
+          <div class="ekman-dresscode-desc">Airy festive silhouettes, cheerful pastels and comfortable movement.</div>
+
+          <div class="ekman-palette-row">
+            <span class="ekman-color-dot" style="background-color: #f3c6b3;" title="Pastel Peach"></span>
+            <span class="ekman-color-dot" style="background-color: #d3b27a;" title="Warm Gold"></span>
+            <span class="ekman-color-dot" style="background-color: #bed3dd;" title="Powder Blue"></span>
+            <span class="ekman-color-dot" style="background-color: #efdd9e;" title="Cheerful Butter"></span>
+          </div>
+          <div class="ekman-dresscode-hashtag">#EkMan</div>
+        </div>
+
+        <div class="ekman-meta-grid">
+          <div class="ekman-meta-label">DATE</div>
+          <div class="ekman-meta-val">Monday, 30 November 2026</div>
+          <div class="ekman-meta-label">TIME</div>
+          <div class="ekman-meta-val"><strong>2:30 - 6:30 PM</strong></div>
+          <div class="ekman-meta-label">VENUE</div>
+          <div class="ekman-meta-val">Poolside &gt; Machan &gt; Main Lawn</div>
+        </div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p18_event_baraat.png', 'Baraat 2.0 • The Joint Procession')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Event Card
+          </button>
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p19_dresscode_bright_side_baraat.png', 'Dress Code • The Bright Side of Baraat')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Dress Code Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>18 &amp; 19 / 25</span>
+        </div>
+      </div>
+
+      <!-- EVENT 9: Rangrez Lawn (with Rajasthani Artwork) -->
+      <div class="ekman-event-card" id="ev-rangrez">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
+
+        <!-- Venue Artwork -->
+        <div class="ekman-art-frame">
+          <img class="ekman-art-img" src="images/events/art/venue_rangrez.png" alt="Rajasthani Celebration at Rangrez Lawn" loading="lazy" />
+        </div>
+
+        <div class="ekman-act-badge">30 NOVEMBER / THE RAJASTHANI CELEBRATION</div>
+
+        <div class="ekman-ev-head">
+          <h3 class="ekman-ev-title">Rangrez Lawn</h3>
+          <div class="ekman-ev-subtitle">Raag, Rang &amp; Rajasthan</div>
+          <div class="ekman-ev-desc">Folk music and a Rajasthani feast, from every jharokha.</div>
+        </div>
+
+        <div class="ekman-meta-grid">
+          <div class="ekman-meta-label">DATE</div>
+          <div class="ekman-meta-val">Monday, 30 November 2026</div>
+          <div class="ekman-meta-label">TIME</div>
+          <div class="ekman-meta-val"><strong>During the 2:30 - 6:30 PM celebration</strong></div>
+          <div class="ekman-meta-label">VENUE</div>
+          <div class="ekman-meta-val">Machan &amp; adjoining Main Lawn</div>
+        </div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p20_event_rangrez.png', 'Rangrez Lawn • Raag, Rang & Rajasthan')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Original Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>20 / 25</span>
+        </div>
+      </div>
+
+      <!-- EVENT 10: The Silver Ball (with Leopard Staircase Art & Heritage After Dark Caricature) -->
+      <div class="ekman-event-card" id="ev-silver-ball">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
+
+        <!-- Venue Artwork -->
+        <div class="ekman-art-frame">
+          <img class="ekman-art-img" src="images/events/art/venue_silver_ball.png" alt="The Silver Ball at Serenade Garden" loading="lazy" />
+        </div>
+
+        <div class="ekman-act-badge">30 NOVEMBER / THE GRAND ANNIVERSARY</div>
+
+        <div class="ekman-ev-head">
+          <h3 class="ekman-ev-title">The Silver Ball</h3>
+          <div class="ekman-ev-subtitle">The Leopard Edit</div>
+          <div class="ekman-ev-desc">Heritage glamour. A little dramatic instinct.</div>
+        </div>
+
+        <!-- Caricature & Dress Code Showcase -->
+        <div class="ekman-dresscode-box">
+          <div class="ekman-dresscode-pill">THE DRESS CODE</div>
+
+          <div class="ekman-caricature-wrap">
+            <img class="ekman-caricature-img" src="images/events/art/caricature_heritage_after_dark.png" alt="Couple Caricature - Heritage After Dark" loading="lazy" />
+          </div>
+
+          <div class="ekman-overview-pre" style="font-size:11px;">THE SILVER BALL / THE LEOPARD EDIT</div>
+          <h4 class="ekman-dresscode-title">Heritage After Dark</h4>
+          <div class="ekman-dresscode-sub">Vintage glamour with a leopard accent</div>
+          <div class="ekman-dresscode-timing">30 NOVEMBER | 8:30 PM ONWARDS</div>
+          <div class="ekman-dresscode-desc">Black, oxblood, antique gold; leopard print as an accent, not a costume.</div>
+
+          <div class="ekman-palette-row">
+            <span class="ekman-color-dot" style="background-color: #1c1818;" title="Velvet Black"></span>
+            <span class="ekman-color-dot" style="background-color: #50252d;" title="Deep Oxblood"></span>
+            <span class="ekman-color-dot" style="background-color: #ae7f53;" title="Leopard Bronze"></span>
+            <span class="ekman-color-dot" style="background-color: #d1b887;" title="Antique Gold"></span>
+          </div>
+          <div class="ekman-dresscode-hashtag">#EkMan</div>
+        </div>
+
+        <div class="ekman-meta-grid">
+          <div class="ekman-meta-label">DATE</div>
+          <div class="ekman-meta-val">Monday, 30 November 2026</div>
+          <div class="ekman-meta-label">TIME</div>
+          <div class="ekman-meta-val"><strong>8:30 PM onwards</strong></div>
+          <div class="ekman-meta-label">VENUE</div>
+          <div class="ekman-meta-val">Serenade Garden / Music, cake &amp; afterparty</div>
+        </div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p21_event_silver_ball.png', 'The Silver Ball • The Leopard Edit')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Event Card
+          </button>
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p22_dresscode_heritage_after_dark.png', 'Dress Code • Heritage After Dark')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Dress Code Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>21 &amp; 22 / 25</span>
+        </div>
+      </div>
     </div>
 
 
@@ -795,35 +1775,89 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
          ======================================================== -->
     <div class="ekman-day-pane" id="pane-day3">
 
-      <!-- Event 11: The Farewell Brew -->
-      <div class="ekman-event-section" style="border-top:none; padding-top:0;">
-        <div class="ekman-event-badge">FAREWELL MORNING • 7:30 - 10:30 AM</div>
-        <h3 class="ekman-event-heading">The Farewell Brew</h3>
-        <div class="ekman-event-subtext">&ldquo;One last coffee. Several new stories.&rdquo;</div>
-        <div class="ekman-card-single" onclick="ekmanOpenLightbox('images/events/p24_event_farewell_brew.png')">
-          <img class="ekman-card-img" src="images/events/p24_event_farewell_brew.png" alt="The Farewell Brew - Breakfast" loading="lazy" />
+      <!-- EVENT 11: The Farewell Brew -->
+      <div class="ekman-event-card" id="ev-farewell-brew">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
+
+        <div class="ekman-act-badge">1 DECEMBER / FAREWELL MORNING</div>
+        <div class="ekman-giant-num">07:30</div>
+
+        <div class="ekman-ev-head">
+          <h3 class="ekman-ev-title">The Farewell Brew</h3>
+          <div class="ekman-ev-subtitle">&ldquo;One last coffee. Several new stories.&rdquo;</div>
+          <div class="ekman-ev-desc">A relaxed breakfast before everyone returns to being responsible.</div>
+        </div>
+
+        <div class="ekman-meta-grid">
+          <div class="ekman-meta-label">DATE</div>
+          <div class="ekman-meta-val">Tuesday, 1 December 2026</div>
+          <div class="ekman-meta-label">TIME</div>
+          <div class="ekman-meta-val"><strong>7:30 - 10:30 AM</strong></div>
+          <div class="ekman-meta-label">VENUE</div>
+          <div class="ekman-meta-val">AURORA / Breakfast</div>
+        </div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p24_event_farewell_brew.png', 'The Farewell Brew')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Original Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>24 / 25</span>
         </div>
       </div>
 
-      <!-- Event 12: Checkout -->
-      <div class="ekman-event-section">
-        <div class="ekman-event-badge">THE CURTAIN CALL • BY 12:00 NOON</div>
-        <h3 class="ekman-event-heading">Checkout</h3>
-        <div class="ekman-event-subtext">&ldquo;Checked out. Still #EkMan.&rdquo;</div>
-        <div class="ekman-card-single" onclick="ekmanOpenLightbox('images/events/p25_event_checkout.png')">
-          <img class="ekman-card-img" src="images/events/p25_event_checkout.png" alt="Checkout - Still #EkMan" loading="lazy" />
+      <!-- EVENT 12: Checkout (Still #EkMan) -->
+      <div class="ekman-event-card" id="ev-checkout">
+        <div class="ekman-card-top-bar">
+          <span>THE #EkMan AFFAIR</span>
+          <span>M &amp; E / XXV</span>
+        </div>
+
+        <div class="ekman-act-badge">1 DECEMBER / THE CURTAIN CALL</div>
+
+        <div style="padding: 20px 0; text-align:center;">
+          <div class="ekman-overview-pre" style="color:#a67d2b; margin-bottom:12px;">By 12:00 noon</div>
+          <h3 class="ekman-checkout-lead">Checkout</h3>
+          <div class="ekman-checkout-hashtag">Checked out. Still #EkMan.</div>
+
+          <div class="ekman-ornament" style="margin: 16px auto;">
+            <div class="ekman-ornament-line"></div>
+            <div class="ekman-ornament-dot"></div>
+            <div class="ekman-ornament-line"></div>
+          </div>
+
+          <div class="ekman-checkout-quote">&ldquo;Thank you for making our Silver Jubilee an occasion worth remembering.&rdquo;</div>
+          <div class="ekman-checkout-sign">MANU &amp; EKTA</div>
+        </div>
+
+        <div class="ekman-card-actions">
+          <button class="ekman-action-btn" onclick="ekmanOpenLightbox('images/events/p25_event_checkout.png', 'Checkout • Still #EkMan')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Original Card
+          </button>
+        </div>
+
+        <div class="ekman-card-bottom-bar">
+          <span>29 &amp; 30 NOVEMBER 2026</span>
+          <span>25 / 25</span>
         </div>
       </div>
-
     </div>
   </div>
 
-  <!-- Fullscreen Card Lightbox Modal -->
+  <!-- Lightbox Modal -->
   <div id="ekmanLightbox" onclick="ekmanCloseLightbox(event)">
     <div class="ekman-lb-inner" onclick="event.stopPropagation()">
       <div class="ekman-lb-close" onclick="ekmanCloseLightbox()">&times;</div>
       <img id="ekmanLbImg" class="ekman-lb-img" src="" alt="Invitation Card" />
-      <div class="ekman-lb-hint">Tap anywhere outside to close</div>
+      <div id="ekmanLbCaption" class="ekman-lb-caption"></div>
     </div>
   </div>
 
@@ -856,11 +1890,13 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
       }
     }
 
-    function ekmanOpenLightbox(src) {
+    function ekmanOpenLightbox(src, caption) {
       var lb = document.getElementById('ekmanLightbox');
       var img = document.getElementById('ekmanLbImg');
+      var cap = document.getElementById('ekmanLbCaption');
       if (lb && img) {
         img.src = src;
+        if (cap) cap.textContent = caption || '';
         lb.classList.add('is-open');
         document.body.style.overflow = 'hidden';
       }
@@ -874,6 +1910,7 @@ var observer=new IntersectionObserver(function(entries) {if(entries[0].isInterse
       }
     }
 
+    // Close on escape key
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') ekmanCloseLightbox();
     });
