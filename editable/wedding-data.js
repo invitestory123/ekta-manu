@@ -16,12 +16,12 @@ window.WEDDING_DATA = {
 
   wedding: {
     dateLabel: "30th NOV - 1st DEC",
-    dateISO: "2026-11-30T07:30:00+05:30",
+    dateISO: "2026-11-30T11:00:00+05:30",
     invitationNote: "Dear Friends and Family,<br />Join us for a celebration of love, laughter, and 25 years of beautiful togetherness as we celebrate our Silver Jubilee!",
   },
 
   schedule: [
-    { title: "Coffee & Cover Stories", time: "7:30 AM" },
+    { title: "The Silver Arrival", time: "11:00 AM" },
     { title: "The Poolside Prelude", time: "12:30 PM" },
     { title: "Baraat 2.0", time: "2:30 PM" },
     { title: "Rangrez Lawn", time: "2:30 PM" },
@@ -35,23 +35,23 @@ window.WEDDING_DATA = {
       dayId: "day1",
       dayTitle: "30 November",
       dayDate: "Monday, 30 November 2026",
-      tagline: "From coffee to the grand celebration",
+      tagline: "Come for the day. Stay for the night.",
       dateShort: "30 Nov",
       overviewCard: "images/events/p15_day2_overview.png",
-      footerNote: "The main event flows directly into the late-night party.",
+      footerNote: "Arrive by late morning so you can enjoy every moment, starting with poolside lunch at 12:30 PM.",
       events: [
         {
-          id: "coffee-cover-stories",
-          number: "07:30",
-          act: "30 NOVEMBER / THE MORNING AFTER",
-          title: "Coffee & Cover Stories",
-          subtitle: "Breakfast - Aurora",
-          quote: "Good mornings. Better stories from last night.",
-          description: "Recharge, compare notes and casually pretend we slept early.",
+          id: "silver-arrival",
+          number: "11:00",
+          act: "30 NOVEMBER / ARRIVAL",
+          title: "The Silver Arrival",
+          subtitle: "Rooms available for check-in",
+          quote: "Check in. Unpack. Let the good times in.",
+          description: "Your room awaits, and so does a celebration worth remembering. Rooms available for check-in.",
           date: "Monday, 30 November 2026",
-          time: "7:30 - 10:30 AM",
-          venue: "AURORA / Breakfast",
-          cardImage: "images/events/p16_event_coffee_cover_stories.png"
+          time: "11:00 AM onwards",
+          venue: "Resort reception / Check-in",
+          cardImage: "images/events/p07_event_silver_arrival.png"
         },
         {
           id: "poolside-prelude",

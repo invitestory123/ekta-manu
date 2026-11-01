@@ -71,9 +71,14 @@ img[data-original*="ChatGPT_Image_May_25.png"] {
    Countdown Section Alignment & Responsive Overflow Fixes
    ========================================================================== */
 
+#rec2487446093 .t396__artboard {
+  overflow: visible !important;
+}
+
 /* Countdown Title: "The Celebration Begins In" */
 #rec2487446093 .tn-elem[data-elem-id="1771277026942000001"],
 .tn-elem__24874460931771277026942000001 {
+  position: absolute !important;
   width: 100% !important;
   max-width: 100vw !important;
   left: 0 !important;
@@ -94,23 +99,33 @@ img[data-original*="ChatGPT_Image_May_25.png"] {
   padding: 0 10px !important;
 }
 
-/* Countdown Timer Outer Wrapper */
+/* Countdown Timer Outer Wrapper - Rock Solid Full-Width Centering */
 #rec2487446093 .tn-elem[data-elem-id="1771277551711000001"],
 .tn-elem__24874460931771277551711000001 {
-  width: 100% !important;
-  max-width: 100vw !important;
+  position: absolute !important;
   left: 0 !important;
   right: 0 !important;
-  margin: 0 auto !important;
+  top: 24px !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   transform: none !important;
-  display: block !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   box-sizing: border-box !important;
   overflow: visible !important;
 }
 
 #rec2487446093 .tn-elem[data-elem-id="1771277551711000001"] .tn-atom,
 #rec2487446093 .tn-elem[data-elem-id="1771277551711000001"] .tn-atom__html {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   width: 100% !important;
+  max-width: 100vw !important;
+  margin: 0 auto !important;
   box-sizing: border-box !important;
 }
 
@@ -119,19 +134,19 @@ img[data-original*="ChatGPT_Image_May_25.png"] {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  gap: clamp(4px, 1.8vw, 10px) !important;
+  gap: clamp(6px, 2.2vw, 14px) !important;
   margin: 75px auto 15px auto !important;
-  padding: 0 4px !important;
+  padding: 0 8px !important;
   width: 100% !important;
-  max-width: 480px !important;
+  max-width: 440px !important;
   box-sizing: border-box !important;
 }
 
 /* Time Blocks (Days, Hours, Minutes, Seconds) */
 #rec2487446093 .time-block {
   text-align: center !important;
-  flex: 0 1 auto !important;
-  min-width: clamp(46px, 14vw, 85px) !important;
+  flex: 1 1 0px !important;
+  max-width: 80px !important;
 }
 
 #rec2487446093 .number-wrap {
@@ -140,6 +155,7 @@ img[data-original*="ChatGPT_Image_May_25.png"] {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  text-align: center !important;
 }
 
 #rec2487446093 .number {
@@ -147,6 +163,7 @@ img[data-original*="ChatGPT_Image_May_25.png"] {
   line-height: 1.15 !important;
   font-family: 'Ovo', serif !important;
   display: block !important;
+  text-align: center !important;
   white-space: nowrap !important;
 }
 
@@ -157,6 +174,7 @@ img[data-original*="ChatGPT_Image_May_25.png"] {
   line-height: 1 !important;
   font-family: 'Ovo', serif !important;
   flex: 0 0 auto !important;
+  text-align: center !important;
 }
 
 #rec2487446093 .label {
@@ -166,6 +184,7 @@ img[data-original*="ChatGPT_Image_May_25.png"] {
   color: #B48C3D !important;
   font-family: 'Ovo', serif !important;
   letter-spacing: 0.5px !important;
+  text-align: center !important;
 }
 
 /* ==========================================================================

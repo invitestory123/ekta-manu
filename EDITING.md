@@ -23,13 +23,13 @@ Edit `couple` in `editable/wedding-data.js`:
 ### Anniversary Dates & Note
 Edit `wedding` in `editable/wedding-data.js`:
 - `dateLabel`: `"30th NOV - 1st DEC"`
-- `dateISO`: `"2026-11-30T07:30:00+05:30"` (drives countdown timer & Google Calendar)
+- `dateISO`: `"2026-11-30T11:00:00+05:30"` (drives countdown timer & Google Calendar)
 - `invitationNote`: Main anniversary message text
 
 ### Multi-Day Programme (Itinerary)
 Edit `itinerary` array in `editable/wedding-data.js`:
 - **30 November 2026** (From coffee to the grand celebration):
-  - 7:30 – 10:30 AM: Coffee & Cover Stories (Breakfast – Aurora)
+  - 11:00 AM ONWARDS: The Silver Arrival (Guest check-in & room availability)
   - 12:30 PM ONWARDS: The Poolside Prelude (Lunch – Poolside)
   - 2:30 – 6:30 PM: Baraat 2.0 (Poolside to Machan & Main Lawn)
   - During the Afternoon: Rangrez – Raag, Rang & Rajasthan (Folk music & festive food – Rangrez Lawn)
