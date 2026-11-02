@@ -33,7 +33,7 @@ Edit `itinerary` array in `editable/wedding-data.js`:
   - 12:30 PM ONWARDS: The Poolside Prelude (Lunch – Poolside)
   - 2:30 – 6:30 PM: Baraat 2.0 (Poolside to Machan & Main Lawn)
   - During the Afternoon: Rangrez – Raag, Rang & Rajasthan (Folk music & festive food – Rangrez Lawn)
-  - 8:30 PM ONWARDS: The Silver Ball – The Leopard Edit (Serenade Garden / Music, cake & afterparty)
+  - 8:30 PM ONWARDS: The Silver Ball – The Modern Glam Edit (Serenade Garden / Music, cake & afterparty)
 - **1 December 2026** (Farewell Morning & The Curtain Call):
   - 7:30 – 10:30 AM: The Farewell Brew (Breakfast – Aurora)
   - By 12:00 NOON: Checkout ("Checked out. Still #EkMann.")

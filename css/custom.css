@@ -202,3 +202,10 @@ img[data-original*="ChatGPT_Image_May_25.png"] {
     height: 22px !important;
   }
 }
+
+/* ==========================================================================
+   Dress Code Palette Row Hidden (Per Client Request)
+   ========================================================================== */
+.ekman-palette-row {
+  display: none !important;
+}

@@ -84,7 +84,7 @@ window.WEDDING_DATA = {
             description: "Airy festive silhouettes, cheerful pastels and comfortable movement.",
             caricature: "images/events/art/caricature_bright_side_baraat.png",
             cardImage: "images/events/p19_dresscode_bright_side_baraat.png",
-            colors: ["#f3c6b3", "#d3b27a", "#bed3dd", "#efdd9e"]
+            colors: []
           }
         },
         {
@@ -103,21 +103,21 @@ window.WEDDING_DATA = {
           id: "silver-ball",
           act: "30 NOVEMBER / THE GRAND ANNIVERSARY",
           title: "The Silver Ball",
-          subtitle: "The Leopard Edit",
-          tagline: "Heritage glamour. A little dramatic instinct.",
+          subtitle: "The Modern Glam Edit",
+          tagline: "Gowns, tuxedos & elevated evening glamour.",
           date: "Monday, 30 November 2026",
           time: "8:30 PM onwards",
           venue: "Serenade Garden",
           venueArt: "images/events/art/venue_silver_ball.png",
           cardImage: "images/events/p21_event_silver_ball.png",
           dressCode: {
-            title: "Heritage After Dark",
-            subtitle: "Vintage glamour with a leopard accent",
+            title: "The Modern Glam Edit",
+            subtitle: "Gowns, tuxedos & elevated evening glamour.",
             time: "30 NOVEMBER | 8:30 PM ONWARDS",
-            description: "Black, oxblood, antique gold; leopard print as an accent, not a costume.",
-            caricature: "images/events/art/caricature_heritage_after_dark.png",
-            cardImage: "images/events/p22_dresscode_heritage_after_dark.png",
-            colors: ["#1c1818", "#50252d", "#ae7f53", "#d1b887"]
+            description: "Evening gowns, tuxedos and elegant formalwear. Dress polished, celebratory and entirely your own.",
+            caricature: "images/events/art/caricature_modern_glam.png",
+            cardImage: "images/events/p22_dresscode_modern_glam.png",
+            colors: []
           }
         }
       ]
@@ -169,7 +169,7 @@ window.WEDDING_DATA = {
 
   details: {
     giftPreference: "Your presence and blessings are our greatest gift.",
-    dressCode: "Mehfil Night • Folk Festive • The Silver Ball (The Leopard Edit) / Elegant Evening Attire",
+    dressCode: "The Bright Side of Baraat • The Modern Glam Edit / Gowns & Tuxedos",
   },
 
   media: {
